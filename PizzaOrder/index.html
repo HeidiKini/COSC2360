@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript Midterm Project
+
+      Author: Heidi Kinikini
+      Date: 10/10/2024
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Pizza Order Form Project</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="projectPizza.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1 id = "title">
+         Pizza Ordering FormS
+      </h1>
+   </header>
+
+   <article>
+      
+         <h2>Pizza Toppings Selection</h2>
+         <form id = "toppings-form">
+            <input type="checkbox" id="Pepperoni" value="0.95" />
+            <label for="Pepperoni">Pepperoni ($0.95)</label>
+            <input type="checkbox" id="Sausage" value="0.95" />
+            <label for="Sausage">Sausage ($0.95)</label>
+            <input type="checkbox" id="Veggies" value="0.95" />
+            <label for="Veggies">Veggies ($0.95)</label>
+            <input type="checkbox" id="Pineapple" value="0.95" />
+            <label for="Pineapple">Pineapple ($0.95)</label>
+            <input type="checkbox" id="Ham" value="0.95" />
+            <label for="Ham">Ham ($0.95)</label>
+         </form>
+      
+      <form>
+         <h2>Choose A Crust Type</h2>
+         <select id="crust-form">
+            <option value="8.00">Hand Tossed</option>
+            <option value="5.00" >Thin Crust</option>
+            <option value="2.00"> Cheese Crust</option>
+            <option value="8.00"> Deep Dish</option>
+         </select>
+      </form>
+
+    </article>
+      
+   
+
+    <article>
+
+      <h2 id="total">Total: $0.00</h2>
+      <h2>Payment Method</h2>
+
+      <h3>Card Type</h3>
+      <select id="card-type">
+         <option value = "Visa">Visa</option>
+         <option value= "Mastercard">Mastercard</option>
+         <option value= "american-express">American Express</option>
+         <option value = "Discover">Discover</option>
+      </select>
+
+      <h3>Card Number</h3>
+      <input type="text" id="cardnumber" required/>
+
+      <h3>Expiration Date</h3>
+      <input type="month" 
+      id="expiration" required/>
+
+    </article>
+
+    <article>
+      <input type="submit" id="submit">
+    </article>
+
+</body>
+</html>
